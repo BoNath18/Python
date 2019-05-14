@@ -1,0 +1,12 @@
+import math
+
+try:
+    pontox_1 = int(input("Informe o primeiro ponto x"))
+    pontoy_1 = int(input("Informe o primeiro ponto y "))
+    pontox_2 = int(input("Informe o segundo ponto x"))
+    pontoy_2 = int(input("Informe o segundo ponto y "))
+
+    func = math.sqrt((pontox_2 - pontox_1) ** 2 + (pontoy_2 - pontoy_1) ** 2)
+    print('A distancia entre os dois pontos = ', func)
+except:
+    print('Impossivel calcular')

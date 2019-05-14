@@ -1,0 +1,23 @@
+from random import *
+
+tentativas = 0
+numsorteado = randint(0,101)
+acertou=False
+
+while tentativas <= 20 and not acertou:
+    sugestao = int(input('Informe o valor entre 0 e 100'))
+
+    if sugestao == numsorteado:
+        acertou=True
+    elif sugestao < numsorteado:
+        print('Tente um numero maior')
+    else:
+        print('Tente um numero menor')
+
+    tentativas+=1
+
+if acertou==True:
+    print('Parabens vc acertou na %d tentativa'%tentativas)
+else:
+    print("Voce nao conseguiu")
+
